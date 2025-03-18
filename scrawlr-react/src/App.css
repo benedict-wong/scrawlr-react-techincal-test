@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Upvote-Container {
+  display: flex;
+  padding: 1em;
+  background-color: #FFF;
+  border-radius: 15px;
+  max-width: 25%;
+  width:25%;
+  max-height: 100vh; 
+  overflow: auto; 
+  gap: 1em;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.upvote-list-container {
+  display:flex;
+  align-items:center;
+  justify-content: right;
+  gap: 2rem;
+  width: 100%;
+}
+
+.upvote-list {
+  list-style-type: none;
+  border: 1px solid rgba(150, 150, 150);
+  border-radius: 15px;
+  max-width: 100%;
+  width:100%;
+  padding: 10px;
+  display: flex;
+  overflow: auto;
+  margin:0;
+}
+
+.upvote-list .upvotes {
+  margin-left: 10px; 
+  margin-right: 10px; 
+}
+
+.upvote-list-button {
+  height: 100%; 
+  display: flex;
+  width: 50px;
+  min-width:50px;
+  max-width: 50px;
+  height:50px;
+  min-height:50px;
+  max-height:50px;
+  align-items: center; 
+  justify-content: center; 
+  padding: 10px; 
+  background-color: #f0f5f5;
+  border:none;
+  border-radius: 8px;
+}
+
+.upvote-list-button span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.upvote-icon {
+  display: inline-block;
+  width: 50px; 
+  height: 50px; 
+  background-color: #F4F6F8;
+  color: #343A40;
+  text-align: center;
+  line-height: 50px; 
+  border-radius: 8px; 
+  user-select:none;
+}
+
+.upvote-list-container.active .upvote-icon {
+  background-color: #E5E8FD;
+  color: #253CF2;
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
